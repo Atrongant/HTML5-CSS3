@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.color-main {
+  color: #21b8c6; }
+
+.color-second {
+  color: #b45d01; }
+
+.text-main {
+  color: #010101; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* 居中 */ }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.logo {
+  /* float: left; logo在最左边 */
+  margin: 30px 0;
+  /* 解决图片下方空隙的bug 因为图片默认是inline*/ }
+  .logo img {
+    display: block; }
+
+/* 顶部的菜单 */
+.menu-link {
+  line-height: 22px; }
+  .menu-link a,
+  .menu-link span,
+  .menu-link div {
+    float: right; }
+  .menu-link a {
+    color: #a0a0a0; }
+  .menu-link .link {
+    width: 1px;
+    height: 12px;
+    margin: 6px 11px 0;
+    /* 父级设置了行高，但是span里没有文字，所以无法垂直居中 */
+    background-color: #cfcfcf; }
+
+/* 语言菜单 */
+.lang {
+  width: 53px;
+  height: 22px;
+  background-color: #ececec;
+  color: #a0a0a0;
+  text-align: center; }
+  .lang:after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 2px 2px;
+    /* 如果设置的宽高大于图片的宽高，图片会repeat */
+    border-left: 1px solid #b5b5b5;
+    border-bottom: 1px solid #b5b5b5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    transform: rotate(-45deg); }
+
+/* clearfix 清浮动 添加到父级元素上即可*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/*# sourceMappingURL=common.css.map */

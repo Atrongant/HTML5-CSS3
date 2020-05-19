@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import 'sassConfig';
+
+.color-main {
+    color: $color-main;
+}
+
+.color-second {
+    color: $color-second;
+}
+
+.text-main {
+    color: $text-main;
+}
+
+.container {
+    width: $container;
+    margin: 0 auto;
+    /* 居中 */
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.logo {
+    /* float: left; logo在最左边 */
+    margin: 30px 0;
+
+    /* 解决图片下方空隙的bug 因为图片默认是inline*/
+    img {
+        display: block;
+    }
+}
+
+/* 顶部的菜单 */
+.menu-link {
+    line-height: 22px;
+
+    a,
+    span,
+    div {
+        float: right;
+    }
+
+    a {
+        color: $text-gray;
+    }
+
+    .link {
+        width: 1px;
+        height: 12px;
+        margin: 6px 11px 0;
+        /* 父级设置了行高，但是span里没有文字，所以无法垂直居中 */
+        background-color: #cfcfcf;
+    }
+}
+
+/* 语言菜单 */
+.lang {
+    width: 53px;
+    height: 22px;
+    background-color: #ececec;
+    color: $text-gray;
+    text-align: center;
+
+    // 第三种箭头
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 0 0 2px 2px;
+        // 第一种箭头
+        /* 如果设置的宽高大于图片的宽高，图片会repeat */
+        // background: url(../images/icon-lang-arrow.png) no-repeat;
+        border-left: 1px solid #b5b5b5;
+        border-bottom: 1px solid #b5b5b5;
+        // css3 第二种箭头
+        @include webkit(box-sizing, border-box);
+        transform: rotate(-45deg);
+    }
+
+    // .icon-arrow{
+    //     display: inline-block;
+    //     width: 6px;
+    //     height: 6px;
+    //     margin: 0 0 2px 2px;
+    //     // 第一种箭头
+    //     /* 如果设置的宽高大于图片的宽高，图片会repeat */
+    //     // background: url(../images/icon-lang-arrow.png) no-repeat;
+    //     // css3 第二种箭头
+    //     border-left: 1px solid #b5b5b5;
+    //     border-bottom: 1px solid #b5b5b5;
+    //     @include webkit(box-sizing,border-box);
+    //     transform: rotate(-45deg);
+    // }
+}
+
+/* clearfix 清浮动 添加到父级元素上即可*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
