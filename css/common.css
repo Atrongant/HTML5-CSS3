@@ -94,6 +94,8 @@ nav > ul > li {
     font-weight: bold; }
   nav > ul > li:hover a, nav > ul > li.current a {
     background-color: #f5f5f5; }
+  nav > ul > li > ul {
+    padding-top: 17px; }
 nav li {
   position: relative; }
   nav li:hover > ul {
@@ -108,7 +110,6 @@ nav ul ul {
   display: none;
   position: absolute;
   z-index: 11;
-  margin-top: 17px;
   left: 0; }
   nav ul ul a {
     height: 41px;
@@ -116,6 +117,9 @@ nav ul ul {
     color: #3e3e3e; }
     nav ul ul a:hover {
       background-color: #eaeaea; }
+  nav ul ul ul {
+    left: 100%;
+    top: 0; }
 
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {

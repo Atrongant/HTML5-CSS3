@@ -142,6 +142,9 @@ nav{
                     background-color: #f5f5f5;
                 }
             }
+            >ul{
+                padding-top: 17px;
+            }
         }
     }
     li{
@@ -165,7 +168,7 @@ nav{
             display: none;
             position: absolute;
             z-index: 11;
-            margin-top: 17px;
+            // padding-top: 17px;
             left: 0;
             a{
                 height: 41px;
@@ -174,6 +177,10 @@ nav{
                 &:hover{
                     background-color: #eaeaea;
                 }
+            }
+            ul{
+                left: 100%;
+                top: 0;
             }
         }
     }
