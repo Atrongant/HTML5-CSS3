@@ -92,8 +92,21 @@ nav > ul > li {
   nav > ul > li > a {
     color: black;
     font-weight: bold; }
+    nav > ul > li > a:after {
+      content: "";
+      display: none;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      margin-left: -5px;
+      z-index: 2;
+      border-top: 5px solid #f5f5f5;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent; }
   nav > ul > li:hover a, nav > ul > li.current a {
     background-color: #f5f5f5; }
+    nav > ul > li:hover a::after, nav > ul > li.current a::after {
+      display: block; }
   nav > ul > li > ul {
     padding-top: 17px; }
 nav li {
