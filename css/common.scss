@@ -28,13 +28,15 @@
 }
 
 // text-align
-.text-left{
+.text-left {
     text-align: left;
 }
-.text-right{
+
+.text-right {
     text-align: right;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
@@ -53,6 +55,7 @@
     margin-top: 7px;
     margin-bottom: 21px;
     line-height: 22px;
+
     a,
     span,
     div {
@@ -80,8 +83,9 @@
     background-color: #ececec;
     color: $text-gray;
     text-align: center;
-    &:hover{
-        ul{
+
+    &:hover {
+        ul {
             display: block;
         }
     }
@@ -117,7 +121,7 @@
     //     @include webkit(box-sizing,border-box);
     //     transform: rotate(-45deg);
     // }
-    ul{
+    ul {
         display: none;
         position: absolute;
         z-index: 10;
@@ -126,13 +130,15 @@
         width: 95px;
         background-color: #ececec;
     }
-    a{
+
+    a {
         display: block;
         width: 100%;
         height: 28px;
         line-height: 28px;
         text-align: center;
-        &:hover{
+
+        &:hover {
             color: $color-main;
             background-color: #e0e0e0;
         }
@@ -140,19 +146,21 @@
 }
 
 // 头部导航nav
-nav{
-    > ul{
-        > li{
+nav {
+    >ul {
+        >li {
             float: left;
-            >a{
+
+            >a {
                 color: black;
                 font-weight: bold;
-                &:after{
+
+                &:after {
                     content: "";
                     display: none;
                     position: absolute;
                     bottom: -5px;
-                    left:50%;
+                    left: 50%;
                     margin-left: -5px;
                     z-index: 2;
                     border-top: 5px solid #f5f5f5;
@@ -160,27 +168,34 @@ nav{
                     border-left: 5px solid transparent;
                 }
             }
-            &:hover,&.current{
-                a{
+
+            &:hover,
+            &.current {
+                a {
                     background-color: #f5f5f5;
-                    &::after{
+
+                    &::after {
                         display: block;
                     }
                 }
             }
-            >ul{
+
+            >ul {
                 padding-top: 17px;
             }
         }
     }
-    li{
+
+    li {
         position: relative;
-        &:hover{
-            >ul{
+
+        &:hover {
+            >ul {
                 display: block;
             }
         }
-        a{
+
+        a {
             display: block;
             width: 114px;
             height: 53px;
@@ -189,61 +204,70 @@ nav{
             line-height: 53px;
         }
     }
-    ul{
-        ul{
+
+    ul {
+        ul {
             display: none;
             position: absolute;
             z-index: 11;
             // padding-top: 17px;
             left: 0;
-            a{
+
+            a {
                 height: 41px;
                 line-height: 41px;
                 color: #3e3e3e;
-                &:hover{
+
+                &:hover {
                     background-color: #eaeaea;
                 }
             }
-            ul{
+
+            ul {
                 left: 100%;
                 top: 0;
             }
         }
     }
-    
+
 }
 
 /* footer开始 */
-footer{
+footer {
     padding-top: 74px;
     background-color: #eaeaea;
 }
-#copyright{
+
+#copyright {
     // height: 48px;
     margin-top: 59px;
     border-top: 1px solid #a0a0a0;
     line-height: 48px;
-	color: #a0a0a0;
+    color: #a0a0a0;
 }
-.footer-contact-info{
-    h5{
+
+.footer-contact-info {
+    h5 {
         margin-bottom: 22px;
         font-size: 24px;
         color: #717171;
     }
-	p{
+
+    p {
         font-size: 13px;
         color: #a0a0a0;
         line-height: 23px;
     }
-    a{
+
+    a {
         color: #a0a0a0;
     }
 }
 
-.share{
+.share {
     margin-top: 38px;
-    a{
+
+    a {
         position: relative;
         float: left;
         width: 30px;
@@ -256,8 +280,9 @@ footer{
         font-size: 14px;
         /* 圆角 */
         border-radius: 100px;
-        &:hover{
-            p{
+
+        &:hover {
+            p {
                 // display: block;
                 visibility: visible;
                 bottom: 150%;
@@ -267,9 +292,11 @@ footer{
             }
         }
     }
-    p{
+
+    p {
         // display: block;
-        visibility: hidden;/* 会占据文档流 */
+        visibility: hidden;
+        /* 会占据文档流 */
         position: absolute;
         width: 80px;
         height: 80px;
@@ -281,9 +308,10 @@ footer{
         border-radius: 6px;
         opacity: 0;
         filter: alpha(opacity=0);
-        filter: drop-shadow(0 0 10px rgba(0,0,0,.16));
-        @include webkit(transition,all .3s ease 0s);
-        &::after{
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, .16));
+        @include webkit(transition, all .3s ease 0s);
+
+        &::after {
             content: "";
             position: absolute;
             bottom: -4px;
@@ -294,50 +322,65 @@ footer{
             border-left: 4px solid transparent;
         }
     }
-    img{
+
+    img {
         width: 100%;
         height: 100%;
     }
-    a:first-child{
+
+    a:first-child {
+
         // background: url(../images/icon-share.png) no-repeat 0 0 #a0a0a0;
-        &:hover{
+        &:hover {
             background-color: #dc261b;
         }
     }
-    a:last-child{
+
+    a:last-child {
+
         // background: url(../images/icon-share.png) no-repeat -30px 0 #a0a0a0;
-        &:hover{
+        &:hover {
             background-color: #3cb035;
         }
     }
 }
 
-.footer-menu{
-    dl{
+.footer-menu {
+    dl {
         float: left;
-        width: 75px;
+        // width: 75px;
         margin-right: 38px;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             margin-bottom: 9px;
-            border:2px solid #fff;
-            @include webkit(box-sizing,border-box);
+            border: 2px solid #fff;
+            @include webkit(box-sizing, border-box);
         }
     }
-    dt{
+
+    dt {
         padding-bottom: 17px;
+        padding-right: 28px;
         margin-bottom: 14px;
         margin-top: 6px;
         border-bottom: 1px solid #c5c5c5;
     }
-    dd{
-        
+
+    dd {
+
         line-height: 24px;
     }
-    a,p{
-        color:#717171;
+
+    a,
+    p {
+        color: #717171;
     }
+}
+
+.wechat-code {
+    width: 78px;
 }
 
 /* clearfix 清浮动 添加到父级元素上即可*/

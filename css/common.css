@@ -224,7 +224,6 @@ footer {
 
 .footer-menu dl {
   float: left;
-  width: 75px;
   margin-right: 38px; }
   .footer-menu dl img {
     width: 100%;
@@ -238,13 +237,18 @@ footer {
     box-sizing: border-box; }
 .footer-menu dt {
   padding-bottom: 17px;
+  padding-right: 28px;
   margin-bottom: 14px;
   margin-top: 6px;
   border-bottom: 1px solid #c5c5c5; }
 .footer-menu dd {
   line-height: 24px; }
-.footer-menu a, .footer-menu p {
+.footer-menu a,
+.footer-menu p {
   color: #717171; }
+
+.wechat-code {
+  width: 78px; }
 
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {
