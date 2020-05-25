@@ -1,0 +1,37 @@
+{
+  "id": "1840735",
+  "name": "郎朗口腔",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "124857",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "970752",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "14908691",
+      "name": "箭头",
+      "font_class": "jiantou-copy",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "737969",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    }
+  ]
+}

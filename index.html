@@ -10,11 +10,15 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./front/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- <link rel="stylesheet" href="./front/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="./front/iconfont/iconfont.css">
+  
   <title>郎朗口腔</title>
 </head>
 
 <body>
+  <!-- 头部 -->
   <div class="container">
     <header class="clearfix">
       <h1 class="logo pull-left">
@@ -176,7 +180,30 @@
       </div>
     </header>
   </div>
-  <img src="./images/img.jpg" width="100%" />
+  <!-- 幻灯片区域 -->
+  <div id="slide-wrap">
+    <div class="slide-content">
+      <ul class="clearfix">
+        <li>
+          <img src="./images/img.jpg" alt="朗朗口腔" width="100%"/>
+        </li>
+        <li>
+          <img src="./images/img.jpg" alt="朗朗口腔" width="100%"/>
+        </li>
+        <li>
+          <img src="./images/img.jpg" alt="朗朗口腔" width="100%"/>
+        </li>
+      </ul>
+    </div>
+    <ul class="slide-nav">
+      <a href="javascript:void(0);" class="current"></a>
+      <a href="javascript:void(0);"></a>
+      <a href="javascript:void(0);"></a>
+    </ul>
+    <span class="slide-prev"><i class="iconfont icon-jiantou-copy"></i></span>
+    <span class="slide-next"><i class="iconfont icon-jiantou"></i></span>
+  </div>
+  <!-- 页脚 -->
   <footer>
     <div class="container">
       <div class="clearfix">
@@ -193,11 +220,11 @@
           <ul class="share clearfix">
             <a href="">
               <p><img src="./images/code.jpg" alt=""></p>
-              <i class="fa fa-weibo"></i>
+              <i class="iconfont icon-weibo"></i>
             </a>
             <a href="">
               <p><img src="./images/code.jpg" alt=""></p>
-              <i class="fa fa-wechat "></i>
+              <i class="iconfont icon-weixin"></i>
             </a>
           </ul>
         </div>
@@ -250,6 +277,7 @@
       <div id="copyright">© 2005 - 2016 朗朗口腔医疗投资有限公司 版权所有 粤ICP备08130115号-1</div>
     </div>
   </footer>
+  <script src="./js/banner.js"></script>
 </body>
 
 </html>
