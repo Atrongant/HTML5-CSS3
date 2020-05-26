@@ -243,7 +243,7 @@ footer {
     margin-top: 59px;
     border-top: 1px solid #a0a0a0;
     line-height: 48px;
-    color: #a0a0a0;
+    color: $text-gray;
 }
 
 .footer-contact-info {
@@ -251,16 +251,17 @@ footer {
         margin-bottom: 22px;
         font-size: 24px;
         color: #717171;
+        text-transform: uppercase;
     }
 
     p {
         font-size: 13px;
-        color: #a0a0a0;
+        color: $text-gray;
         line-height: 23px;
     }
 
     a {
-        color: #a0a0a0;
+        color: $text-gray;
     }
 }
 
@@ -381,6 +382,49 @@ footer {
 
 .wechat-code {
     width: 78px;
+}
+/* 主体内容的标题 */
+.main-column{
+    margin:90px 0 80px 0;
+    text-align: center;
+    font-size: 0px;
+    h4{
+        font-size: 26px;
+        font-weight: normal;
+    }
+    p{
+        margin-top: 12px;
+        font-size: 12px;
+        color:$text-gray;
+    }
+    span{
+        display: inline-block;
+        height: 10px;
+        margin: 0 12px;
+        border-left: 1px solid #cfcfcf;
+    }
+}
+
+/* 加载提示 */
+.loading-wait{
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-weight: normal;
+    .loading-icon{
+        margin-top: 15px;
+        @include webkit(transform,rotate(0deg));
+        animation: loading 1s ease infinite;
+    }
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 /* clearfix 清浮动 添加到父级元素上即可*/
