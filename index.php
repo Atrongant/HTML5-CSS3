@@ -211,10 +211,10 @@
     </div>
     <div class="info-list">
       <div id="infoListWrap">
-        <div class="loading-wait">
+        <!-- <div class="loading-wait">
           加载中
           <div class="loading-icon"><i class="iconfont icon-jiazai"></i></div>
-        </div>
+        </div> -->
       </div>
       
       <!-- <ul class="clearfix">
@@ -312,8 +312,13 @@
     </div>
   </footer>
   <script src="./js/jquery.min.js"></script>
+  <script src="./js/common.js"></script>
   <script src="./js/banner.js"></script>
   <script>
+    loadingMsg({
+      wrap: 'infoListWrap',
+      msg: '加载中'
+    });
     $.ajax({
       url:"./data/index.php",
       dataType:"json",
@@ -327,9 +332,13 @@
       success:function(req){
         let infoListWrap=document.getElementById('infoListWrap');
         if(!req.data||req.data.length===0){
-          infoListWrap.innerHTML=`<div class="loading-wait">
-                                    当前没有数据
-                                  </div>`;
+          loadingMsg({
+            wrap: 'infoListWrap',
+            msg: '当前没有数据'
+          });
+          // infoListWrap.innerHTML=`<div class="loading-wait">
+          //                           当前没有数据
+          //                         </div>`;
           return false;
         }
         let ul='<ul class="clearfix">';
