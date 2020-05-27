@@ -383,46 +383,53 @@ footer {
 .wechat-code {
     width: 78px;
 }
+
 /* 主体内容的标题 */
-.main-column{
-    margin:90px 0 80px 0;
+.main-column {
     text-align: center;
-    font-size: 0px;
-    h4{
+
+    // font-size: 0px;
+    h4 {
         font-size: 26px;
         font-weight: normal;
     }
-    p{
+
+    p {
         margin-top: 12px;
-        font-size: 12px;
-        color:$text-gray;
+        // font-size: 12px;
+        color: $text-gray;
+        text-transform: uppercase;
     }
-    span{
+
+    span {
         display: inline-block;
         height: 10px;
-        margin: 0 12px;
+        // margin: 0 12px;
+        margin: 0 9px;
         border-left: 1px solid #cfcfcf;
     }
 }
 
 /* 加载提示 */
-.loading-wait{
+.loading-wait {
     padding: 20px 0;
     background-color: #f1f1f1;
     text-align: center;
     font-weight: normal;
-    .loading-icon{
+
+    .loading-icon {
         margin-top: 15px;
-        @include webkit(transform,rotate(0deg));
+        @include webkit(transform, rotate(0deg));
         animation: loading 1s ease infinite;
     }
 }
 
-@keyframes loading{
-    from{
+@keyframes loading {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
@@ -446,4 +453,16 @@ footer {
 
 .clearfix {
     display: block;
+}
+
+/* for循环定义padding偏移量 */
+@for $i from 1 through 100 {
+    .padding-top-#{$i} {
+        padding-top: (1px * $i);
+    }
+
+    .padding-bottom-#{$i} {
+        padding-bottom: (1px * $i);
+    }
+
 }

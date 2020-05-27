@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <!-- 头部 -->
+  <!-- 头部start -->
   <div class="container">
     <header class="clearfix">
       <h1 class="logo pull-left">
@@ -180,7 +180,8 @@
       </div>
     </header>
   </div>
-  <!-- 幻灯片区域 -->
+  <!-- 头部end -->
+  <!-- 幻灯片区域start -->
   <div id="slide-wrap">
     <div class="slide-content">
       <ul class="clearfix">
@@ -203,9 +204,11 @@
     <span class="slide-prev"><i class="iconfont icon-jiantou-copy"></i></span>
     <span class="slide-next"><i class="iconfont icon-jiantou"></i></span>
   </div>
+  <!-- 幻灯片区域end -->
   <!-- 内容区 -->
   <div class="container">
-    <div class="main-column">
+    <!-- 郎朗口腔start -->
+    <div class="main-column padding-top-90 padding-bottom-70">
       <h4>郎朗口腔</h4>
       <p>呵护牙齿健康 创造美好未来<span></span>CARE FOR TEETH TO CREATE A BETTER FUTURE</p>
     </div>
@@ -236,6 +239,18 @@
       </ul> -->
       <a href="javascript:;" class="more-link">查看更多</a>
     </div>
+    <!-- 郎朗口腔end -->
+
+    <!-- 郎朗公益start -->
+    <section class="welfare">
+      <header>
+        <div class="main-column padding-top-53 padding-bottom-53">
+          <h4>郎朗公益</h4>
+          <p>呵护牙齿健康 创造美好未来<span></span>CARE FOR TEETH TO CREATE A BETTER FUTURe</p>
+        </div>
+      </header>
+    </section>
+    <!-- 郎朗公益end -->
   </div>
   <!-- 页脚 -->
   <footer>
