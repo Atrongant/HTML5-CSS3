@@ -106,8 +106,9 @@
     line-height: 37px;
     color: $text-gray;
     text-align: center;
-    @include webkit(transition,all .5s ease 0s);
-    &:hover{
+    @include webkit(transition, all .5s ease 0s);
+
+    &:hover {
         background-color: $color-main;
         color: #fff;
         border-color: $color-main;
@@ -115,8 +116,73 @@
 }
 
 /* 郎朗公益 */
-.welfare{
-    header{
+.welfare {
+    header {
         background-color: #efefef;
+    }
+}
+
+.welfare-wrap {
+    .row {
+        float: left;
+        width: 33.33333%;
+    }
+
+    .content-big {
+        height: 380px;
+    }
+
+    .content-small {
+        height: 190px;
+    }
+
+    .content-dec {
+        padding: 42px 48px 0 40px;
+
+        .title {
+            font-size: 24px;
+        }
+
+        time {
+            display: block;
+            margin: 12px 0 19px;
+            opacity: .5;
+            filter: alpha(opacity=50);
+        }
+
+        .line {
+            display: block;
+            width: 38px;
+            height: 1px;
+            margin-bottom: 31px;
+            background-color: #010101;
+            opacity: 0.2;
+            filter: alpha(opacity=20);
+        }
+
+        p {
+            line-height: 24px;
+            color: $text-main;
+            font-weight: normal;
+        }
+
+        .link-more {
+            margin-top: 16px;
+        }
+    }
+
+    .color-while {
+
+        .title,
+        time,
+        p,
+        .dec,
+        .link-more {
+            color: #fff;
+        }
+
+        .link-more {
+            border-color: #fff;
+        }
     }
 }

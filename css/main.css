@@ -102,3 +102,42 @@
 /* 郎朗公益 */
 .welfare header {
   background-color: #efefef; }
+
+.welfare-wrap .row {
+  float: left;
+  width: 33.33333%; }
+.welfare-wrap .content-big {
+  height: 380px; }
+.welfare-wrap .content-small {
+  height: 190px; }
+.welfare-wrap .content-dec {
+  padding: 42px 48px 0 40px; }
+  .welfare-wrap .content-dec .title {
+    font-size: 24px; }
+  .welfare-wrap .content-dec time {
+    display: block;
+    margin: 12px 0 19px;
+    opacity: .5;
+    filter: alpha(opacity=50); }
+  .welfare-wrap .content-dec .line {
+    display: block;
+    width: 38px;
+    height: 1px;
+    margin-bottom: 31px;
+    background-color: #010101;
+    opacity: 0.2;
+    filter: alpha(opacity=20); }
+  .welfare-wrap .content-dec p {
+    line-height: 24px;
+    color: #010101;
+    font-weight: normal; }
+  .welfare-wrap .content-dec .link-more {
+    margin-top: 16px; }
+.welfare-wrap .color-while .title,
+.welfare-wrap .color-while time,
+.welfare-wrap .color-while p,
+.welfare-wrap .color-while .dec,
+.welfare-wrap .color-while .link-more {
+  color: #fff; }
+.welfare-wrap .color-while .link-more {
+  border-color: #fff; }

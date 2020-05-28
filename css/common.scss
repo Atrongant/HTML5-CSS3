@@ -389,7 +389,7 @@ footer {
     text-align: center;
 
     // font-size: 0px;
-    h4 {
+    h3 {
         font-size: 26px;
         font-weight: normal;
     }
@@ -431,6 +431,22 @@ footer {
 
     to {
         transform: rotate(360deg);
+    }
+}
+/* 查看更多按钮 */
+.link-more{
+    display: block;
+    width: 92px;
+    height: 29px;
+    border: solid 1px #676767;
+    line-height: 29px;
+    text-align: center;
+    color: $text-main;
+    i{
+        position: relative;
+        top:1px;
+        margin-left: 6px;
+        font-weight: 700;
     }
 }
 
