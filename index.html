@@ -423,8 +423,7 @@
         categoryId: 10000
       },
       type: "POST",
-      beforeSend: function () {
-      },
+      beforeSend: function () {},
       success: function (req) {
         let welfare = document.getElementById('welfareWrap');
         let data = req.data;
@@ -447,7 +446,7 @@
           </div>
           `;
         data.forEach((item, index) => {
-          if(index!=0){
+          if (index != 0) {
             html += `
             <div class="row">
               <div class="content-flex">
@@ -470,10 +469,8 @@
         })
         welfare.innerHTML = html;
       },
-      complete: function () {
-      },
-      error: function () {
-      }
+      complete: function () {},
+      error: function () {}
     });
   </script>
 </body>
