@@ -123,17 +123,48 @@
 }
 
 .welfare-wrap {
+    display: flex;
+    height: 570px;
+
     .row {
-        float: left;
-        width: 33.33333%;
+        flex: 1;
     }
 
-    .content-big {
+    .row:last-child {
+        .content-flex-small {
+            order: 1;
+        }
+
+        .content-flex-big {
+            order: 2;
+        }
+    }
+
+    .content-flex {
+        display: flex;
+        height: 100%;
+        /* 等于父元素 */
+        flex-direction: column;
+    }
+
+    .content-flex-big {
+        flex: 2;
+    }
+
+    .content-flex-small {
+        flex: 1;
+    }
+
+    /* .content-big {
         height: 380px;
     }
 
     .content-small {
         height: 190px;
+    } */
+    img {
+        display: block;
+        /* 解决图片底部的空隙 */
     }
 
     .content-dec {
@@ -171,7 +202,7 @@
         }
     }
 
-    .color-while {
+    .color-white {
 
         .title,
         time,
