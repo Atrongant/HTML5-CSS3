@@ -40,6 +40,10 @@
     text-align: center;
 }
 
+.hide{
+    display: none;
+}
+
 .logo {
     /* float: left; logo在最左边 */
     margin: 30px 0;
@@ -448,6 +452,9 @@ footer {
         margin-left: 6px;
         font-weight: 700;
     }
+    /* &.border-none{
+        border: none;
+    } */
 }
 
 /* clearfix 清浮动 添加到父级元素上即可*/

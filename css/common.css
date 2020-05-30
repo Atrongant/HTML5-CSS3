@@ -28,6 +28,9 @@
 .text-center {
   text-align: center; }
 
+.hide {
+  display: none; }
+
 .logo {
   /* float: left; logo在最左边 */
   margin: 30px 0;
@@ -295,7 +298,10 @@ footer {
   border: solid 1px #676767;
   line-height: 29px;
   text-align: center;
-  color: #010101; }
+  color: #010101;
+  /* &.border-none{
+      border: none;
+  } */ }
   .link-more i {
     position: relative;
     top: 1px;
