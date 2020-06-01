@@ -40,8 +40,16 @@
     text-align: center;
 }
 
-.hide{
+.hide {
     display: none;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
 }
 
 .logo {
@@ -437,8 +445,9 @@ footer {
         transform: rotate(360deg);
     }
 }
+
 /* 查看更多按钮 */
-.link-more{
+.link-more {
     display: block;
     width: 92px;
     height: 29px;
@@ -446,12 +455,14 @@ footer {
     line-height: 29px;
     text-align: center;
     color: $text-main;
-    i{
+
+    i {
         position: relative;
-        top:1px;
+        top: 1px;
         margin-left: 6px;
         font-weight: 700;
     }
+
     /* &.border-none{
         border: none;
     } */
