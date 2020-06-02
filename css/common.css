@@ -314,6 +314,22 @@ footer {
     margin-left: 6px;
     font-weight: 700; }
 
+/* tab-menu */
+.tab-menu {
+  text-align: center; }
+  .tab-menu a {
+    display: inline-block;
+    width: 93px;
+    padding: 0 23px;
+    margin: 0 4px;
+    line-height: 32px;
+    border: solid 1px #a0a0a0;
+    color: #010101; }
+    .tab-menu a.current {
+      background-color: #a0a0a0;
+      border-color: #a0a0a0;
+      color: #fff; }
+
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {
   content: ".";

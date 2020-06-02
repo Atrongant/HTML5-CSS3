@@ -468,6 +468,26 @@ footer {
     } */
 }
 
+/* tab-menu */
+.tab-menu {
+    text-align: center;
+    a {
+        display: inline-block;
+        width: 93px;
+        padding: 0 23px;
+        margin: 0 4px;
+        // height: 32px;
+        line-height: 32px;
+        border: solid 1px #a0a0a0;
+        color: $text-main;
+        &.current{
+            background-color: $text-gray;
+            border-color: $text-gray;
+            color: #fff;
+        }
+    }
+}
+
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {
     content: ".";

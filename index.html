@@ -309,6 +309,35 @@
       </div>
     </section>
     <!-- 医生模块end -->
+    <!-- 资讯动态start -->
+    <div class="container">
+      <section>
+        <header>
+          <div class="main-column padding-top-90 padding-bottom-40">
+            <h3>资讯动态</h3>
+            <p>
+              呵护牙齿健康 创造美好未来<span></span>CARE FOR TEETH TO CREATE A
+              BETTER FUTURe
+            </p>
+          </div>
+        </header>
+        <ul class="tab-menu">
+          <!-- <a href="JavaScript:void();" class="current" title="行业动态">行业动态</a><a href="JavaScript:void();"  title="郎朗资讯">郎朗资讯</a><a href="JavaScript:void();"  title="媒体报道">媒体报道</a><a href="JavaScript:void();"  title="公益活动">公益活动</a> -->
+        </ul>
+        <div class="news-wrap">
+          <div class="box clearfix">
+          </div>
+          <div class="box clearfix">
+          </div>
+          <div class="box clearfix">
+          </div>
+          <div class="box clearfix">
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+    <!-- 咨询动态end -->
     <!-- 页脚 -->
     <footer>
       <div class="container">
@@ -389,6 +418,8 @@
     <script src="./js/swiper/js/swiper.min.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/banner.js"></script>
+    <script src="js/docswiper.js"></script>
+    <script src="js/indextNewsAjax.js"></script>
     <script>
       loadingMsg({
         wrap: "infoListWrap",
@@ -495,24 +526,6 @@
         error: function () {},
       });
     </script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination-doctor',
-          clickable: true,
-        },
-        /* navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }, */
-      });
-    </script>
+    
   </body>
 </html>
