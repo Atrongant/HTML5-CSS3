@@ -330,6 +330,12 @@ footer {
       border-color: #a0a0a0;
       color: #fff; }
 
+/* 占位图显示 */
+.img-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {
   content: ".";
