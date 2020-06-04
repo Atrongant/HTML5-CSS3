@@ -336,6 +336,42 @@ footer {
   background-position: center;
   background-size: cover; }
 
+/* 面包屑 */
+.crumbs {
+  padding-top: 86px;
+  padding-bottom: 84px;
+  background: url(../images/img.jpg) no-repeat center;
+  color: white; }
+  .crumbs .column-name {
+    font-size: 30px;
+    height: 29px;
+    margin-bottom: 16px; }
+  .crumbs a {
+    color: white; }
+  .crumbs span {
+    margin: 0 5px; }
+
+.category-menu {
+  height: 49px;
+  background: white;
+  box-shadow: 0px 1px 0px 0px rgba(236, 236, 236, 0.75);
+  border-bottom: 1px solid #f1f1f1; }
+  .category-menu li {
+    float: left;
+    margin-right: 18px; }
+  .category-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 0 15px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 49px;
+    font-weight: 400;
+    color: #010101; }
+    .category-menu a:hover, .category-menu a.current {
+      border-bottom: 1px solid #21B8C6;
+      color: #21B8C6; }
+
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {
   content: ".";
