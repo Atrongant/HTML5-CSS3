@@ -549,6 +549,116 @@ footer {
     }
 }
 
+/* 自动分列 */
+.row-container {
+    overflow: hidden;
+
+    .row-wrap {
+        @extend %clearfix;
+    }
+
+    div[class^="col-item"] {
+        float: left;
+        @include webkit(box-sizing, border-box);
+    }
+
+    &.gutter-15 {
+        div[class^="col-item"] {
+            padding: 0 15px;
+        }
+
+        .row-wrap {
+            margin: 0 -15px;
+        }
+    }
+
+    .col-item-4 {
+        width: 33.33333%;
+    }
+
+    .col-item-6 {
+        width: 50%;
+    }
+
+    .col-item-3 {
+        width: 25%;
+    }
+}
+
+/* 图文内容样式 */
+/* news-wrap */
+.figure-content {
+
+    .title {
+        // padding-top: 25px;
+        font-size: 18px;
+        color: $text-main;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    time {
+        display: block;
+        padding: 11px 0 13px;
+        color: $text-gray;
+    }
+
+    .line {
+        display: block;
+        width: 50px;
+        height: 1px;
+        background-color: #a0a0a0;
+    }
+
+    .dec {
+        // padding: 15px 0 22px 0;
+        padding-top: 15px;
+        margin-bottom: 22px;
+        font-weight: normal;
+        line-height: 22px;
+        color: $text-gray;
+        @include ell(2);
+    }
+
+    .link-more {
+        opacity: .4;
+        filter: alpha(opacity=40);
+    }
+}
+
+/* news.html */
+.news-list {
+    .item {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgb(241, 241, 241);
+    }
+}
+
+.pagination {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    font-size: 0;
+    text-align: center;
+
+    a,span{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-color: #f5f5f5;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        color: #a0a0a0;
+        margin: 0 7px;
+    }
+    span{
+        background-color: $color-main;
+        color: #fefefe;
+    }
+}
+
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {
     content: ".";
@@ -571,7 +681,7 @@ footer {
 }
 
 /* for循环定义padding偏移量 */
-@for $i from 1 through 100 {
+@for $i from 1 through 105 {
     .padding-top-#{$i} {
         padding-top: (1px * $i);
     }

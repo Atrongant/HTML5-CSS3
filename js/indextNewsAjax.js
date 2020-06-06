@@ -62,15 +62,19 @@ function loadNewsData() {
       req.data.forEach((item) => {
         let date = item.time.split(" ")[0];
         boxHtml += `
-              <div class="item">
-                <div class="img-cover" style="background-image:url(${item.imgUrl}">
-                <img src="images/blank/indexNews.png" alt="${item.title}">
+              <div class="col-item-3">
+                <div class="item">
+                  <div class="img-cover" style="background-image:url(${item.imgUrl}">
+                    <img src="images/blank/indexNews.png" alt="${item.title}" width="100%">
+                  </div>
+                  <div class="figure-content padding-top-24">
+                    <h4 class="title">${item.title}</h4>
+                    <time datetime="${item.time}" pubtime="${date}">${date}</time>
+                    <i class="line"></i>
+                    <p class="dec">${item.dec}</p>
+                    <a href="" class="link-more">查看更多<i class="iconfont icon-jiantou1"></i></a>
+                  </div>
                 </div>
-                <h4 class="title">${item.title}</h4>
-                <time datetime="${item.time}" pubtime="${date}">${date}</time>
-                <i class="line"></i>
-                <p class="dec">${item.dec}</p>
-                <a href="" class="link-more">查看更多<i class="iconfont icon-jiantou1"></i></a>
               </div>
             `;
       });

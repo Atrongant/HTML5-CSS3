@@ -107,14 +107,7 @@
 
 .welfare-wrap {
   display: flex;
-  height: 570px;
-    /* .content-big {
-        height: 380px;
-    }
-
-    .content-small {
-        height: 190px;
-    } */ }
+  height: 570px; }
   .welfare-wrap .row {
     flex: 1; }
   .welfare-wrap .row:last-child .content-flex-small {
@@ -229,54 +222,3 @@
   color: #010101;
   font-weight: normal;
   opacity: 0.8; }
-
-/* news-wrap */
-.news-wrap {
-  overflow: hidden;
-  /* 裁剪box超出的部分 */
-  padding: 73px 0 102px 0; }
-  .news-wrap .box {
-    margin-left: -15px;
-    margin-right: -15px; }
-  .news-wrap img {
-    width: 100%;
-    background-size: cover;
-    display: block; }
-  .news-wrap .item {
-    float: left;
-    width: 25%;
-    padding: 0 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box; }
-  .news-wrap .title {
-    padding: 25px 0 11px 0;
-    font-size: 18px;
-    color: #010101;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-  .news-wrap time {
-    display: block;
-    margin-bottom: 13px;
-    color: #a0a0a0; }
-  .news-wrap .line {
-    display: block;
-    width: 50px;
-    height: 1px;
-    background-color: #a0a0a0; }
-  .news-wrap .dec {
-    padding-top: 15px;
-    margin-bottom: 22px;
-    font-weight: normal;
-    line-height: 22px;
-    color: #a0a0a0;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden; }
-  .news-wrap .link-more {
-    opacity: .4;
-    filter: alpha(opacity=40); }
