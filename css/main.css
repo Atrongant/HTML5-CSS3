@@ -222,3 +222,38 @@
   color: #010101;
   font-weight: normal;
   opacity: 0.8; }
+
+/* partner.html */
+.partner-list .item {
+  padding: 0 20px 84px 20px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .partner-list .item:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+.partner-list .img {
+  display: block;
+  background: white;
+  box-shadow: 0px 0px 11px 0px rgba(4, 0, 0, 0.1);
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .partner-list .img:hover {
+    box-shadow: 0px 0px 11px 0px rgba(4, 0, 0, 0.2); }
+.partner-list img {
+  border-radius: 8px; }
+.partner-list figcaption {
+  padding-top: 33px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
