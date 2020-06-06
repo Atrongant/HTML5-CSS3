@@ -8,6 +8,9 @@
     clear: both;
     visibility: hidden; }
 
+#header {
+  background-color: #fff; }
+
 .color-main {
   color: #21b8c6; }
 
@@ -45,6 +48,10 @@
 
 .p-r {
   position: relative; }
+
+/* 背景颜色 */
+.bc-color-f7 {
+  background-color: #F7F7F7; }
 
 .logo {
   /* float: left; logo在最左边 */
@@ -417,8 +424,7 @@ footer {
 .figure-content .line {
   display: block;
   width: 50px;
-  height: 1px;
-  background-color: #a0a0a0; }
+  border: 1px solid #a0a0a0; }
 .figure-content .dec {
   padding-top: 15px;
   margin-bottom: 22px;
@@ -443,7 +449,8 @@ footer {
   margin-bottom: 120px;
   font-size: 0;
   text-align: center; }
-  .pagination a, .pagination span {
+  .pagination a,
+  .pagination span {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -456,6 +463,8 @@ footer {
   .pagination span {
     background-color: #21b8c6;
     color: #fefefe; }
+  .pagination.hospital-module a {
+    background-color: #eee; }
 
 /* clearfix 清浮动 添加到父级元素上即可*/
 .clearfix:after {

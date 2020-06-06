@@ -310,8 +310,9 @@
         padding: 0 20px 84px 20px;
         opacity: 0.7;
         filter: alpha(opacity=70);
-        @include webkit(transition,all .3s ease 0s);
-        &:hover{
+        @include webkit(transition, all .3s ease 0s);
+
+        &:hover {
             opacity: 1;
             filter: alpha(opacity=100);
         }
@@ -322,18 +323,103 @@
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 0px 11px 0px rgba(4, 0, 0, 0.1);
         border-radius: 8px;
-        @include webkit(transition,all .3s ease 0s);
-        &:hover{
+        @include webkit(transition, all .3s ease 0s);
+
+        &:hover {
             box-shadow: 0px 0px 11px 0px rgba(4, 0, 0, 0.2);
 
         }
     }
-    img{
+
+    img {
         border-radius: 8px;
     }
-    figcaption{
+
+    figcaption {
         padding-top: 33px;
         text-align: center;
+        @include ell(1);
+    }
+}
+
+/* 门诊列表 */
+.hospital-wrap {
+    padding-top: 82px;
+
+    .item {
+        position: relative;
+        margin-bottom: 81px;
+        background-color: #fff;
+        @extend %clearfix;
+    }
+
+    .item:last-child {
+        .content:after {
+            display: none;
+        }
+    }
+
+    .item:nth-child(2n+1) {
+        .hospital-logo {
+            right: 0;
+        }
+
+    }
+
+    .item:nth-child(2n) {
+        .hospital-logo {
+
+            left: 0;
+        }
+
+        .img-wrap,
+        .content {
+            float: right;
+        }
+    }
+
+    .hospital-logo {
+        position: absolute;
+        width: 139px;
+        height: 68px;
+        background: rgba(255, 255, 255, 1);
+        top: 50%;
+        margin-top: -34px;
+    }
+
+    .img-wrap {
+        position: relative;
+    }
+
+    .img-wrap,
+    .content {
+        float: left;
+        width: 50%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            margin-left: -30px;
+            width: 60px;
+            display: block;
+            border: 1px solid #DDDDDD;
+        }
+    }
+
+    .content {
+        padding: 50px 32px 0;
+        @include webkit(box-sizing, border-box);
+    }
+
+    .line {
+        margin-top: 18px;
+        margin-bottom: 3px;
+    }
+
+    .dec {
+        margin-bottom: 14px;
         @include ell(1);
     }
 }

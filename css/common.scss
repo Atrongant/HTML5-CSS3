@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import 'sassConfig';
 
+#header {
+    background-color: #fff;
+}
+
 .color-main {
     color: $color-main;
 }
@@ -50,6 +54,11 @@
 
 .p-r {
     position: relative;
+}
+
+/* 背景颜色 */
+.bc-color-f7 {
+    background-color: #F7F7F7;
 }
 
 .logo {
@@ -607,8 +616,7 @@ footer {
     .line {
         display: block;
         width: 50px;
-        height: 1px;
-        background-color: #a0a0a0;
+        border: 1px solid #a0a0a0;
     }
 
     .dec {
@@ -642,7 +650,8 @@ footer {
     font-size: 0;
     text-align: center;
 
-    a,span{
+    a,
+    span {
         display: inline-block;
         width: 35px;
         height: 35px;
@@ -653,9 +662,15 @@ footer {
         color: #a0a0a0;
         margin: 0 7px;
     }
-    span{
+
+    span {
         background-color: $color-main;
         color: #fefefe;
+    }
+    &.hospital-module{
+        a{
+            background-color: #eee;
+        }
     }
 }
 
