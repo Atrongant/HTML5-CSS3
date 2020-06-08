@@ -580,7 +580,19 @@ footer {
             margin: 0 -15px;
         }
     }
+    &.gutter-16 {
+        div[class^="col-item"] {
+            padding: 0 16px;
+        }
 
+        .row-wrap {
+            margin: 0 -16px;
+        }
+    }
+
+    .col-item-12 {
+        width: 100%;
+    }
     .col-item-4 {
         width: 33.33333%;
     }

@@ -402,6 +402,12 @@ footer {
     padding: 0 15px; }
   .row-container.gutter-15 .row-wrap {
     margin: 0 -15px; }
+  .row-container.gutter-16 div[class^="col-item"] {
+    padding: 0 16px; }
+  .row-container.gutter-16 .row-wrap {
+    margin: 0 -16px; }
+  .row-container .col-item-12 {
+    width: 100%; }
   .row-container .col-item-4 {
     width: 33.33333%; }
   .row-container .col-item-6 {

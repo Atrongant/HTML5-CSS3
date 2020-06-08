@@ -344,8 +344,6 @@
 
 /* 门诊列表 */
 .hospital-wrap {
-    padding-top: 82px;
-
     .item {
         position: relative;
         margin-bottom: 81px;
@@ -395,6 +393,11 @@
     .content {
         float: left;
         width: 50%;
+    }
+
+    .content {
+        padding: 50px 32px 0;
+        @include webkit(box-sizing, border-box);
 
         &::after {
             content: "";
@@ -408,11 +411,6 @@
         }
     }
 
-    .content {
-        padding: 50px 32px 0;
-        @include webkit(box-sizing, border-box);
-    }
-
     .line {
         margin-top: 18px;
         margin-bottom: 3px;
@@ -421,5 +419,274 @@
     .dec {
         margin-bottom: 14px;
         @include ell(1);
+    }
+}
+
+/* 公益活动 */
+.public-welfare {
+    @extend .hospital-wrap;
+
+    .item {
+        margin-bottom: 100px;
+        background-color: transparent;
+
+        &:nth-child(2n) {
+            .content {
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 73px;
+        right: 0;
+        // left: -51px;
+        bottom: 0;
+        padding-left: 50px;
+        padding-right: 60px;
+        width: -webkit-calc(50% + 53px);
+        background-color: #fff;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    time {
+        padding-top: 2px;
+        padding-bottom: 12px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .dec {
+        margin-bottom: 22px;
+        line-height: 30px;
+        @include ell(3);
+    }
+
+    .line {
+        margin-bottom: 14px;
+        border-color: #21B8C6;
+    }
+}
+
+.baidu-map {
+    width: 100%;
+    height: 398px;
+}
+
+.content-wrap {
+    @extend %clearfix;
+
+    .info {
+        float: left;
+        width: 400px;
+        padding: 37px 0;
+        background: #F9F9F9;
+        text-align: center;
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 28px;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 10px;
+            color: $text-main;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 26px;
+            padding: 0 25px 0 23px;
+            border-radius: 22px;
+            background: $color-main;
+            font-size: 18px;
+            line-height: 44px;
+            font-weight: 400;
+            color: #FEFEFE;
+        }
+
+        strong {
+            color: $color-main;
+        }
+
+        p {
+            line-height: 20px;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.message-form {
+    margin-left: 500px;
+
+    .title {
+        border-top: 1px solid #E3E3E3;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(1, 1, 1, 1);
+        text-align: center;
+        line-height: 85px;
+    }
+
+    .input-item {
+        margin-bottom: 26px;
+        border-bottom: 1px solid rgba(227, 227, 227, 1);
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px 13px;
+        @include webkit(box-sizing, border-box);
+        border: none;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 112px;
+    }
+
+    input::-webkit-input-placeholder {
+        /*Webkit browsers*/
+        color: #a0a0a0;
+    }
+
+    input:-moz-placeholder {
+        /*Mozilla Firefox 4 to 8*/
+        color: #a0a0a0;
+    }
+
+    input::-moz-placeholder {
+        /*Mozilla Firefox 19+*/
+        color: #a0a0a0;
+    }
+
+    input:-ms-input-placeholder {
+        /*Internet Explorer 10+*/
+        color: #a0a0a0;
+    }
+
+    button[type=button] {
+        width: 115px;
+        height: 40px;
+        border: none;
+        background: rgba(1, 1, 1, 1);
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.jobs-banner {
+    margin: 100px 0;
+    padding-top: 108px;
+    padding-bottom: 117px;
+    background: url(../images/jobs-bg.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+
+    h4 {
+        margin-bottom: 30px;
+        font-size: 55px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+}
+
+.jobs-list {
+    section{
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    header {
+        position: relative;
+        padding-left: 31px;
+        background: rgba(249, 249, 249, 1);
+        border: 1px solid rgba(235, 235, 235, 1);
+        line-height: 43px;
+        color: #a0a0a0;
+        font-size: 14px;
+
+        strong {
+            color: #010101;
+            font-weight: bold;
+        }
+
+        span {
+            margin-right: 60px;
+        }
+
+        &:after {
+            content: "+";
+            position: absolute;
+            right: 25px;
+            color: black;
+            font-size: 24px;
+        }
+    }
+
+    .show {
+        .content{
+            display: block;
+        }
+        header:after{
+            content: "-";
+        }
+    }
+
+    .content {
+        display: none;
+        padding: 23px 32px;
+        line-height: 30px;
+        color: #7c7c7c;
+
+        .button {
+            display: block;
+            width: 90px;
+            margin: 19px 0 8px;
+            border-radius: 16px;
+            background: rgba(33, 184, 198, 1);
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+            font-weight: normal;
+        }
+
+        .info {
+            a {
+                color: black;
+                font-weight: bold;
+            }
+
+            span {
+                margin-right: 44px;
+            }
+        }
     }
 }
