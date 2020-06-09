@@ -99,8 +99,9 @@
     </div>
     <div class="container">
       <div class="jobs-list">
-        <section class="show">
+        <section>
           <header>
+            <div class="mark"></div>
             <span>工作地点：<strong>深圳</strong></span><span>工作岗位：<strong>财务</strong></span>
           </header>
           <div class="content">
@@ -122,6 +123,7 @@
         </section>
         <section>
           <header>
+            <div class="mark"></div>
             <span>工作地点：<strong>深圳</strong></span><span>工作岗位：<strong>财务</strong></span>
           </header>
           <div class="content">
@@ -143,6 +145,7 @@
         </section>
         <section>
           <header>
+            <div class="mark"></div>
             <span>工作地点：<strong>深圳</strong></span><span>工作岗位：<strong>财务</strong></span>
           </header>
           <div class="content">
@@ -183,6 +186,21 @@
       $("#header").load("header.html");
       $("#crumbs").load("crumbs.html");
       $("#footer").load("footer.html");
+      let jobList=document.querySelector(".jobs-list");
+      jobList.addEventListener("click",function(event){
+        let target=event.target;
+        let hasClassName='';
+        if(target.className=="mark"){
+          hasClassName=target.parentNode.parentNode.className;
+          if(!hasClassName){
+            target.parentNode.parentNode.className='show';
+          }else{
+            target.parentNode.parentNode.className='';
+          }
+        }
+      });
+
+
       function checkForm() {
         let name = document.getElementById("name");
         let email = document.getElementById("email");
