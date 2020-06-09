@@ -618,12 +618,14 @@
 }
 
 .jobs-list {
-    section{
+    section {
         margin-bottom: 10px;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0;
         }
     }
+
     header {
         position: relative;
         padding-left: 31px;
@@ -652,10 +654,11 @@
     }
 
     .show {
-        .content{
+        .content {
             display: block;
         }
-        header:after{
+
+        header:after {
             content: "-";
         }
     }
@@ -689,7 +692,8 @@
             }
         }
     }
-    .mark{
+
+    .mark {
         position: absolute;
         left: 0;
         right: 0;
@@ -697,5 +701,77 @@
         top: 0;
         z-index: 10;
         cursor: pointer;
+    }
+}
+
+.article-content {
+    padding: 0 85px;
+
+    
+    header {
+        padding: 83px 0 30px;
+        text-align: center;
+        border-bottom: 1px solid #ececec;
+        .title {
+            margin-bottom: 19px;
+            font-size: 30px;
+        }
+        span {
+            margin: 0 9px;
+            color: $text-gray;
+        }
+
+    }
+    section{
+        p{
+            padding: 18px 0;
+            font-size: 15px;
+            color: #010101;
+            line-height: 35px;
+            text-indent: 2em;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    footer{
+        padding-top: 74px;
+        .link-more{
+            margin: 65px auto 73px;
+            border-color: #e2e2e2;
+            color: $text-gray;
+            line-height: 29px;
+        }
+    }
+    
+}
+.related{
+    display: flex;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    line-height: 38px;
+    li{
+        flex: 1;
+    }
+    a{
+        color: #010101;
+    }
+    .icon{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+        background-image: url(../images/icon001.jpg);
+        background-repeat: no-repeat;
+    }
+    li:first-child{
+        i{
+            background-position: left top;
+        }
+    }
+    li:last-child{
+        i{
+            background-position: right top;
+        }
     }
 }

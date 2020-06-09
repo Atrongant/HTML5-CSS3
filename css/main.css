@@ -512,3 +512,52 @@
   top: 0;
   z-index: 10;
   cursor: pointer; }
+
+.article-content {
+  padding: 0 85px; }
+  .article-content header {
+    padding: 83px 0 30px;
+    text-align: center;
+    border-bottom: 1px solid #ececec; }
+    .article-content header .title {
+      margin-bottom: 19px;
+      font-size: 30px; }
+    .article-content header span {
+      margin: 0 9px;
+      color: #a0a0a0; }
+  .article-content section p {
+    padding: 18px 0;
+    font-size: 15px;
+    color: #010101;
+    line-height: 35px;
+    text-indent: 2em; }
+  .article-content section img {
+    max-width: 100%; }
+  .article-content footer {
+    padding-top: 74px; }
+    .article-content footer .link-more {
+      margin: 65px auto 73px;
+      border-color: #e2e2e2;
+      color: #a0a0a0;
+      line-height: 29px; }
+
+.related {
+  display: flex;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  line-height: 38px; }
+  .related li {
+    flex: 1; }
+  .related a {
+    color: #010101; }
+  .related .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    background-image: url(../images/icon001.jpg);
+    background-repeat: no-repeat; }
+  .related li:first-child i {
+    background-position: left top; }
+  .related li:last-child i {
+    background-position: right top; }
