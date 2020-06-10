@@ -514,6 +514,7 @@
   cursor: pointer; }
 
 .article-content {
+  position: relative;
   padding: 0 85px; }
   .article-content header {
     padding: 83px 0 30px;
