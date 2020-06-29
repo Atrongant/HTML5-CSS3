@@ -172,6 +172,8 @@ nav ul ul {
 .footer {
   padding-top: 74px;
   background-color: #eaeaea; }
+  .footer address {
+    font-style: normal; }
 
 #copyright {
   margin-top: 59px;

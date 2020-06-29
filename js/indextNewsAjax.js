@@ -1,5 +1,5 @@
 $.ajax({
-  url: "./data/newsCategory.php",
+  url: "http://localhost/api/newsCategory",
   dataType: "json",
   async: false,
   cache: false,
@@ -12,6 +12,7 @@ $.ajax({
   type: "POST",
   beforeSend: function () {},
   success: function (req) {
+    console.log('indextNewsAjax.js->15:\t',req)
     let tabMenu = document.querySelector(".tab-menu");
     console.log(tabMenu);
     let menuHtml = "";
